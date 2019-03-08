@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+  div {
+      margin: 0%
+  }
+  .container {
+    justify-content: flex-start
+  }
+  .brand-logo {
+      margin-left: 10%
+  }
+  .nav-list {
+    margin-right: 10%
+  }
+  .nav-items {
+      margin-left: 0%
+  }
