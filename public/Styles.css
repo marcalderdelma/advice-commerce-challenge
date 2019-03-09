@@ -16,9 +16,9 @@ body {
   .brand-logo {
       margin-left: 10%
   }
+  nav {
+    padding: 0px 10px
+  }
   .nav-list {
     margin-right: 10%
-  }
-  .nav-items {
-      margin-left: 0%
   }

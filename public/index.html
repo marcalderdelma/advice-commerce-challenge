@@ -8,22 +8,25 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <!--Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
     <title>Advice-Commerce Challenge</title>
 </head>
 <body>
     <header>
-        <nav>
-            <ul id="user-actions" class="dropdown-content">
-                <li><a href="#!">Entre</a></li>
-                <li class="divider"></li>
-                <li><a href="#!">Cadastre-se<</a>/li>
-            </ul>
+        <!-- Barra de navegação -->
+        <nav class="grey darken-4">
             <div class="nav-wrapper grey darken-4">
+
+                <!-- Logotipo da empresa -->
                 <a href="#!" class="brand-logo">
                     <img src="../assets/logo.ico" alt="Advice-Commerce" width="60">
                 </a>
-                <ul class="right nav-list">
+
+                <!-- Menu em telas pequenas -->
+                <a href="#!" class="sidenav-trigger hide-on-large-only" data-target="mobile-nav"><i class="material-icons">menu</i></a>
+
+                <!-- Menu em telas maiores -->
+                <ul class="right nav-list hide-on-med-and-down">
                     <li class="nav-items">
                         <form>
                             <div class="input-field">
@@ -43,6 +46,23 @@
                 </ul>
             </div>
         </nav>
+
+        <!-- Lista de itens para o menu exibido em telas medianas e pequenas -->
+        <ul class="sidenav hide-on-large-only" id="mobile-nav">
+                <li>
+                
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                    
+                        </div>
+                </li>    
+                <li><a href="#!">Entre</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">Cadastre-se</a></li>
+                <li class="nav-items"><a href="#!"><i class="material-icons">shopping_cart</i></a></li>
+            </ul>        
     </header>
     <main>
         <div class="container">
@@ -97,7 +117,7 @@
                     <div class="card" role="banner">
                         <div class="card-image">
                             <img src="../assets/produto1.png" >
-                            <span class="card-title">Produto 1</span>
+                            <span class="card-title green-text accent-4">Produto 1</span>
                         </div>
                         <div class="card-content">
                             <p></p>
@@ -111,7 +131,7 @@
                     <div class="card" role="banner">
                         <div class="card-image">
                             <img src="../assets/produto1.png" >
-                            <span class="card-title green-text">produto 2</span>
+                            <span class="card-title green-text accent-4">produto 2</span>
                         </div>
                         <div class="card-content">
                             <p></p>
@@ -125,7 +145,7 @@
                     <div class="card" role="banner">
                         <div class="card-image">
                             <img src="../assets/produto1.png" >
-                            <span class="card-title">Produto 3</span>
+                            <span class="card-title green-text accent-4">Produto 3</span>
                         </div>
                         <div class="card-content">
                             <p></p>
@@ -138,26 +158,35 @@
             </div>
         </div>
     </main>
+    <!-- Rodapé -->
     <footer class="page-footer docs-footer grey darken-4">
         <div class="container">
             <div class="row" >
-                <div class="col 10 s12 l3 m6">
+                <!-- Links de redirecionamento -->
+                <div class="col s3">
                     <h5>INSTITUCIONAL</h5>
+                    <p><a href="#!" class="green-text accent-4">Quem somos</a></p>
                 </div>
-                <div class="col 10 s12 l3 m6">
+                <div class="col s3">
                     <h5>AJUDA & SUPORTE</h5>
+                    <p><a href="#!" class="green-text accent-4">Polilitica de Frete</a></p>
+                    <p><a href="#!" class="green-text accent-4">Polilitica de Privacidade</a></p>
+                    <p><a href="#!" class="green-text accent-4">Contato</a></p>
                 </div>
-                <div class="col 10 s12 l3 m6">
+                <div class="col s3">
                     <h5>FALE CONOSCO</h5>
+                    <p><a href="#!" class="green-text accent-4"><i class="material-icons">phone_in_talk</i> (99) 99999-999</a></p>
                 </div>
+                <div class="col s3">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3689.494389039569!2d-46.95661148574479!3d-22.372712385285954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8563439095cd3%3A0x800d472a21c46c62!2sAg%C3%AAncia+Advice+%7C+E-Commerce+%26+Inbound+Marketing!5e0!3m2!1spt-BR!2snl!4v1552102214849" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>                
             </div>
+            <!-- Copyright -->
             <div class="footer-copyright">                
-                    <p>© 2019 Texto de copyright</p>
-                
+                © 2019 Texto de copyright
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="../src/index.js"></script>
 </body>
 </html>
